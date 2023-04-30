@@ -43,7 +43,7 @@ public class loginTest {
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//tr[@class='heading3']//td")));
 		//assertion for validate login 
 		//working in chrome driver as well now.
-		Assert.assertEquals(driver.findElement(By.xpath("//tr[@class='heading3']//td")).getText(), "Manger Id : mngr495127");
+		Assert.assertEquals(driver.findElement(By.xpath("//tr[@class='heading3']//td")).getText(), "hiransanjeewaa@gmail.com");
 		
 	}
 	
