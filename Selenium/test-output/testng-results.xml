@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="96382" started-at="2023-04-23T15:59:19 IST" finished-at="2023-04-23T16:00:56 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="96382" started-at="2023-04-23T15:59:19 IST" finished-at="2023-04-23T16:00:56 IST">
+      <class name="SelPackage.loginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SelPackage.loginTest@3891771e]" name="setup" is-config="true" duration-ms="4759" started-at="2023-04-23T15:59:19 IST" finished-at="2023-04-23T15:59:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:SelPackage.loginTest@3891771e]" name="login" duration-ms="90489" started-at="2023-04-23T15:59:24 IST" finished-at="2023-04-23T16:00:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SelPackage.loginTest@3891771e]" name="teardown" is-config="true" duration-ms="1077" started-at="2023-04-23T16:00:55 IST" finished-at="2023-04-23T16:00:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SelPackage.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
