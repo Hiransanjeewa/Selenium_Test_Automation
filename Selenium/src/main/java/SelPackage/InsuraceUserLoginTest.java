@@ -26,14 +26,18 @@ public class InsuraceUserLoginTest {
     @Test
     public void login(){
         driver.get("https://demo.guru99.com/insurance/v1/index.php");    // Opening the url (login page)
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//h3")));
+
         driver.findElement(By.name("email")).sendKeys("hiransanjeewaa@gmail.com");
         driver.findElement(By.name("password")).sendKeys("123456");
         driver.findElement(By.name("submit")).click();  // clicking the submit button
 
         // Explicit waiting
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[@class=\"btn btn-default\"]")));
 
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='content']")));
 
         Assert.assertEquals(driver.findElement(By.xpath("//div[@class=\"content\"]//h4")).getText(),"hiransanjeewaa@gmail.com");
 
