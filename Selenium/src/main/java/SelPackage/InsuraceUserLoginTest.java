@@ -35,7 +35,7 @@ public class InsuraceUserLoginTest {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[@class=\"btn btn-default\"]")));
 
 
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@class=\"content\"]//h4")).getText(),false);
+        Assert.assertEquals(driver.findElement(By.xpath("//div[@class=\"content\"]//h4")).getText(),"hiransanjeewaa@gmail.com");
 
     }
 
